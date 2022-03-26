@@ -1,0 +1,39 @@
+.paragraph {
+font-family: $font-fam-pri;
+font-style: normal;
+font-weight: normal;
+font-size: $fsText;
+line-height: 22px;
+letter-spacing: -0.05em;
+
+}
+
+.content__p,
+.about__body {
+font-family: $font-fam-pri;
+font-style: normal;
+font-size: 12px;
+line-height: 30px;
+letter-spacing: -0.05em;
+
+color: $color-primary-darkest;
+
+@include respond(phone){
+    font-size: $fsTextsm;
+    line-height: 30px;
+}
+
+}
+
+.about__body {
+    font-weight: 600;
+}
+
+.content__p {
+    font-weight: normal;
+}
+
+.var {
+    margin-bottom: 10px;
+    display: inline-block;
+}

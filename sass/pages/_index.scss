@@ -1,0 +1,48 @@
+.intro {
+    background: #0A2067;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider {
+    background: #428edf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+  
+  .text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 61px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+  
+    @include respond(phone){
+      font-size: 60px;
+      line-height: 61px;
+    }
+  }
+  
+  .hide {
+    background-color:  #0A2067;
+    overflow: hidden;
+  }
+  
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
+  

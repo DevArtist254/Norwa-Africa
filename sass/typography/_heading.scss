@@ -1,0 +1,63 @@
+.heading {
+font-family: $font-fam-pri;
+font-style: normal;
+font-weight: 600;
+font-size: $fsMedium;
+line-height: 55px;
+letter-spacing: -0.05em;
+text-decoration: underline;
+text-transform: uppercase;
+
+@include textLG;
+
+@include respond(phone){
+    font-size: $fsLarger;
+  }
+}
+
+.heading-pri-content,
+.heading-sec-content {
+font-family: Montserrat;
+font-style: normal;
+font-size: $fsSmall;
+line-height: 25px;
+letter-spacing: -0.05em;
+text-transform: capitalize;
+
+@include respond(phone){
+    font-size: $fsLarger;
+    line-height: 55px;
+}
+}
+
+.heading-pri-content {
+    font-weight: 500;
+    @include textLG;
+}
+
+.heading-sec-content {
+    font-weight: 300;
+    color: #0A2067;
+}
+
+.content__heading,
+.sub-heading {
+font-family: $font-fam-pri;
+letter-spacing: -0.05em;
+
+}
+
+.sub-heading {
+font-weight: normal;
+font-size: $fsSmall;
+}
+
+.content__heading {
+font-style: normal;
+font-weight: 500;
+font-size: $fsText;
+    
+color: $color-primary-darkest;
+display: block;
+margin-bottom: 1rem;
+}
