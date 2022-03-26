@@ -1,0 +1,53 @@
+.btn-primary {
+    border: none;
+    border-radius: 5px;
+    width: 11rem;
+    height: 3.3rem;
+    background-color:$color-ascent;
+}
+
+.btn-content,
+.btn-card {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-card {
+    transform: rotate(-90deg);
+}
+
+#pagesToContactUS {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    border: none;
+    border-radius: 20px;
+    width: 20em;
+    height: 4em;
+    background-color:$color-ascent;
+    display: none;
+
+    @include respond(tab-land) {
+        display: block;
+    }
+}
+
+.pagesToContactUS {
+    &:link,
+    &:visited {
+        font-family: $font-fam-pri;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 17px;
+        text-decoration: none;
+        color: white;
+    }
+
+    display: none;
+
+    @include respond(tab-land) {
+        display: block;
+    }
+}
+

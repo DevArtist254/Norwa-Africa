@@ -1,0 +1,409 @@
+.featured-products,
+.featured-solutions {
+    width: 100vw;
+
+    &__heading{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        display: flex;
+
+        &--h1{
+          width: 50%;
+        }
+    
+        &--img {
+          width: 600px;
+        }
+
+        @include respond(phone) {
+            width: max-content;
+        }
+    }
+}
+
+.featured-products {
+    margin-top: $vertical-gutter-larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__product {
+      width: 80%;
+      margin: 0 auto;
+    }
+}
+
+.featured-product {
+  margin-top: $vertical-gutter-larger;
+  width: 100vw;
+
+  &__heading {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    @include respond(tab-land) {
+      width: max-content;
+    }
+    
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: $vertical-gutter-normal;
+
+    @include respond(tab-land) {
+      height: 100vh;
+      flex-direction: row;
+    }
+  }
+
+  &__image {
+    background-image: url("./img/Rectangle 3r.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    @include respond(phone) {
+      background: none;
+    }
+
+    @include respond(tab-land) {
+      background-image: url("./img/Rectangle 3.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--img {
+      height: 80%;
+      width: 100%;
+
+      @include respond(tab-land){
+        width: initial;
+      }
+    }
+  }
+
+  &__context {
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: $vertical-gutter-normal;
+
+    @include respond(tab-land) {
+      width: 50%;
+      padding-left: 12rem;
+    }
+
+    &--sub-heading {
+      margin-bottom: $vertical-gutter-small;
+      text-align: center;
+
+      @include respond(tab-land) {
+        text-align: start;
+      }
+    }
+
+    &--paragraph {
+      margin-bottom: $vertical-gutter-exsmall;
+      text-align: center;
+      @include respond(tab-land) {
+        text-align: start;
+      }
+    }
+
+
+    &--link {
+      &:link,
+      &:visited{
+      font-family: Montserrat;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.05em;
+      line-height: 27px;
+      font-weight: 300;
+      font-size: 30px;
+      color: #FF8E01;
+      padding-bottom: 1rem;
+      width: 100%;
+
+      text-decoration: none;
+      transition: all .5s ease-in-out;
+      text-align: center;
+
+      @include respond(tab-land) {
+        text-align: start;
+        width: max-content;
+      }
+    }
+
+    &:hover,
+    &:visited {
+      border-bottom: 2px solid  #FF8E01;
+    }
+    }
+  }
+}
+
+
+.features {
+  width: 100vw;
+  margin-top: $vertical-gutter-normal;
+
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: row;
+    width: 83vw;
+    margin: 0 auto;
+    margin-top: $vertical-gutter-normal;
+  }
+
+  &__basic,
+  &__desc {
+    width: 90%;
+    margin: 0 auto;
+
+    &--heading {
+      text-align: start;
+      margin-bottom: $vertical-gutter-exsmall;
+    }
+  }
+  
+  &__basic {
+    margin-bottom: $vertical-gutter-small;
+    
+  }
+
+  &__desc {
+    &--items {
+      margin-left: 25px;
+    }
+  }
+
+}
+
+
+
+.bgBorehole {
+    background: linear-gradient(
+      0deg, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), 
+    url(./img/borehole.jpeg);
+    @include bgCardFeatures;
+  }
+  
+  .bgRO {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/RO_1000m3.jpg);
+    @include bgCardFeatures;
+  }
+  
+  .bgSolar {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/solar-energy.jpg);
+    @include bgCardFeatures;
+  }
+  
+.bgDom {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/under-sink-ro.jpg);
+  @include bgCardFeatures;
+}
+
+.bgChem {
+  background: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), 
+    url(./img/wallpaper-chemicals.JPG);
+  @include bgCardFeatures;
+}
+
+.bgAcces {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/accessories.jpg);
+  @include bgCardFeatures;
+}
+
+.bgSolCom {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/ROplant.jpg);
+  @include bgCardFeatures;
+}
+
+.bgSolDom {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/child.jpeg);
+  @include bgCardFeatures;
+}
+
+.bgSolUV {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/UV-light-purification.jpg);
+  @include bgCardFeatures;
+}
+
+.bgSolUF {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/uv-chamber.jpeg);
+  @include bgCardFeatures;
+}
+
+
+.pureSolPure {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/pure.jpg);
+  @include bgCardFeatures;
+}
+
+
+.sf {
+  background: url(./img/sf.png);
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.df {
+  background: url(./img/df.png);
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.tf {
+  background: url(./img/tf.png);
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.fr4 {
+  background: url(./img/4fr.jpg);
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.fuv4 {
+  background: url(./img/4fuv.png);
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.mp {
+  background: url(./img/mp.jpg);
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.uv {
+  background:url(./img/Uv.jpg);
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+
+.solarWaterPumps {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), 
+    url(../images/solar-water-pumps.png); 
+  @include bgCardFeatures;
+  background-size: cover;
+}
+
+.submersibleWaterPumps {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), 
+    url(../images/submersibe-pumps-bg.png); 
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.sewagePumps {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), 
+    url(../images/Sewage-Pumps.png); 
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.boosterPumps {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), 
+    url(../images/Booster-Pumps.png); 
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.verticalPumps {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), 
+    url(../images/Vertical-Pumps.png); 
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.boosterSetPumps {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), 
+    url(../images/Booster-Set-Pumps.png); 
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.drainagePumps {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), 
+    url(../images/Drainage-Pumps.png); 
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.circulatorPumps {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), 
+    url(../images/Circular-Pumps.png); 
+  @include bgCardFeatures;
+  background-size: contain;
+}
+
+.dosingPumps {
+  background-image: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), 
+    url(../images/Pumps.png); 
+  @include bgCardFeatures;
+  background-size: contain;
+}

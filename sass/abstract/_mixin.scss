@@ -1,0 +1,59 @@
+@mixin textLG {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(
+      180.47deg,
+      $color-primary-dark 22.44%,
+      $color-primary-darkest 99.6%
+    );
+}
+
+@mixin bgCardFeatures {
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+  /*
+  Media Query Manager
+  
+  Breakpoints : Screens         : nickname
+  
+  0-600 px    : phone           : phone
+  600-900 px  : tablet-portrait : tab-port
+  900-1200 px : tablet-landscape: tab-land
+  1200-1800 px: normal becoz its desktop first method
+  1800px +    : Big Monitor     : big-screen
+  
+  1em = 16px
+  */
+  
+  @mixin respond($breakpoint) {
+    //big screen breakpoint
+    @if $breakpoint==big-screen {
+      @media (min-width: 112.5em) {
+        @content;
+      }
+    }
+    //tab-land breakpoint
+    @if $breakpoint==tab-land {
+      @media (min-width: 75em) {
+        @content;
+      }
+    }
+  
+    //tab-port breakpoint
+    @if $breakpoint==tab-port {
+      @media (min-width: 56.25em) {
+        @content;
+      }
+    }
+  
+    //phone breakpoint
+    @if $breakpoint==phone {
+      @media (min-width: 37.5em) {
+        @content;
+      }
+    }
+  }
+  

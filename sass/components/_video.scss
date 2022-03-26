@@ -1,0 +1,36 @@
+.video {
+    width: 100vw;
+    margin-top: $vertical-gutter-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+        width: 90%;
+        margin-bottom: $vertical-gutter-small;
+        text-align: center;
+    }
+
+    &__video {
+        width: 360px;
+        height: 240px;
+
+
+        @include respond(phone) {
+            width: 640px;
+            height: 360px;
+        }
+
+        @include respond(tab-port) {
+            width: 720px;
+            height: 480px;
+        }
+
+        @include respond(tab-land) {
+            width: 1280px;
+            height: 720px;
+        }
+    }
+}
+
+

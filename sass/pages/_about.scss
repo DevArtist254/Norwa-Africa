@@ -1,0 +1,45 @@
+.about {
+    width: 100vw;
+
+    &__heading-pri {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+
+        @include respond(phone) {
+            width: max-content;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        border-bottom: 2.5px solid $color-primary-darkest;
+    }
+
+    &__content-intro,
+    &__content {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    &__content {
+        &--video {
+            width: 100%;
+            height: 360px;
+            @include respond(phone) {
+                height: 720px;
+            }
+        }
+    }
+
+    &__body {
+        @include respond(tab-land){
+            padding-left: 30rem;
+        }
+        margin-bottom: 2rem;
+    }
+}

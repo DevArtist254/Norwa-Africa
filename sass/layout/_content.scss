@@ -1,0 +1,22 @@
+.accessories {
+    margin-top: $vertical-gutter-normal;
+
+    &__heading {
+        width: 100vw;
+        text-align: center;
+    }
+
+    &__container {
+        width: 100vw;
+        margin-top: $vertical-gutter-small;
+    }
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

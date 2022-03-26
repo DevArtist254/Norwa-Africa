@@ -1,0 +1,146 @@
+.header {
+    width: 100vw;
+    min-height: 80vh;
+    display: none;
+
+    @include respond(tab-port) {
+        display: block;
+    }
+  }
+
+  .framer {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.move {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.move.current {
+    opacity: 1;
+}
+
+.move .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.move .content h1 {
+    margin-bottom: 10px;
+}
+
+.buttons button#next,
+.buttons button#prev {
+    position: absolute;
+    top: 50%;
+}
+
+.buttons button#next {
+    right: 15px;
+}
+
+.buttons button#prev {
+    left: 15px;
+}
+
+.buttons button {
+    border: 2px solid #333;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.header-p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: -0.05em;
+    line-height: 1.8rem;
+
+    color: #001730;
+}
+
+.buttons button:hover {
+    background-color: #333;
+    color: white;
+}
+
+
+
+.move.current .content {
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+
+.move:first-child{
+    background-image: url("./bdg/d.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.move:nth-child(1){   
+    background-image: url("./img/under-sink-ro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.move:nth-child(2){
+    background-image: url("./img/RO_1000m3.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.move:nth-child(3){    
+    background-image: url("./img/solar.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.move:nth-child(4){
+    background-image: url("./img/pumps.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.move:nth-child(5){
+    background-image: url("./img/wallpaper-chemicals.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.move:nth-child(6){
+    background-image: url("./img/accessories.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,12 @@
+.link-btn {
+    &:link,
+    &:visited{
+        font-family: $font-fam-pri;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: none;
+        color: white;
+    }
+}
